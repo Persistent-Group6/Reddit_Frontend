@@ -1,0 +1,114 @@
+.btnCreatePost,
+.btnCreateSubreddit {
+  margin-top: 5px;
+}
+
+.post-form {
+  margin: 2px;
+}
+
+.comment-notification {
+  margin-top: 5px;
+}
+
+.create-post-container {
+  margin-top: 10px;
+  --post-line-color: #ccc;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #878A8C;
+  position: relative;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.btnDiscard {
+    fill: #38434b;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 288px;
+    height: 34px;
+    color: #f73816;
+    background-color: transparent;
+  }
+  .btnDiscard:hover {
+    background-color: rgb(44, 92, 196);
+    color: aliceblue;
+  }
+
+.create-post-heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 22px;
+  color: #1c1c1c;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.btnCreatePost {
+    background-color: #f73816;
+    border-color: #f73816;
+    color: aliceblue;
+    fill: #f73816;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 288px;
+    height: 34px;
+    margin: 15px;
+  }
+  .btnCreatePost:hover {
+    background-color: rgb(44, 92, 196);
+  }
+  .guidelines {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100px;
+    color: #000000;
+  }
+  li{
+    color: #000000;
+  }
+  
+  .sidebar {
+    width: 312px;
+    height: 400px;
+    --post-line-color: #ccc;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #878A8C;
+    position: relative;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .move-upward{
+    margin-top: -70px;
+  }
