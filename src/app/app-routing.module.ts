@@ -12,7 +12,7 @@ import { AuthGuard } from './auth/auth.guard';
 import{ ViewPostBySubredditComponent} from './view-post-by-subreddit/view-post-by-subreddit.component';
 
 const routes: Routes = [
-  {path:'view-post-by-subreddit/:id',component:ViewPostBySubredditComponent, canActivate: [AuthGuard]},
+  
   { path: '', component: HomeComponent },
   { path: 'view-post/:id', component: ViewPostComponent },
   { path: 'user-profile/:name', component: UserProfileComponent, canActivate: [AuthGuard]},
@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'create-post', component: CreatePostComponent, canActivate: [AuthGuard]},
   { path: 'create-subreddit', component: CreateSubredditComponent, canActivate: [AuthGuard]},
   { path: 'sign-up', component: SignupComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  {path:'view-post-by-subreddit/:id',component:ViewPostBySubredditComponent, canActivate: [AuthGuard]}
  
 ];
 
