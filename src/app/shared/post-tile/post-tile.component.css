@@ -34,6 +34,7 @@
 
 .subreddit-text{
     font-weight: bold;
+    cursor: pointer;
 }
 
 .post-text{
