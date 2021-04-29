@@ -25,6 +25,8 @@ import { EditorModule } from '@tinymce/tinymce-angular';
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ViewPostBySubredditComponent } from './view-post-by-subreddit/view-post-by-subreddit.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { UserProfileComponent } from './auth/user-profile/user-profile.component
     CreatePostComponent,
     ListSubredditsComponent,
     ViewPostComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PageNotFoundComponent,
+    ViewPostBySubredditComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SubredditModel } from '../subreddit-response';
 import { SubredditService } from '../subreddit.service';
 import { throwError } from 'rxjs';
+import{Router}from '@angular/router';
 
 @Component({
   selector: 'app-list-subreddits',
@@ -11,7 +12,7 @@ import { throwError } from 'rxjs';
 export class ListSubredditsComponent implements OnInit {
 
   subreddits: Array<SubredditModel>;
-  constructor(private subredditService: SubredditService) { }
+  constructor(private subredditService: SubredditService,private router: Router) { }
 
   ngOnInit() {
     this.subredditService.getAllSubreddits().subscribe(data => {
@@ -19,5 +20,8 @@ export class ListSubredditsComponent implements OnInit {
     }, error => {
       throwError(error);
     })
+  }
+  goToSubReddit(id: number): void {
+    this.router.navigateByUrl('/view-post-by-subreddit/'+id);
   }
 }
