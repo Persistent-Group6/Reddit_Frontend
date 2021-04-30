@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'create-subreddit', component: CreateSubredditComponent, canActivate: [AuthGuard]},
   { path: 'sign-up', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  {path:'view-post-by-subreddit/:id',component:ViewPostBySubredditComponent, canActivate: [AuthGuard]}
+  {path:'view-post-by-subreddit/:id',component:ViewPostBySubredditComponent}
  
 ];
 

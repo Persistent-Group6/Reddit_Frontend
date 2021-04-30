@@ -15,7 +15,7 @@ export class ViewPostBySubredditComponent implements OnInit {
   constructor(private postService: PostService,private activateRoute: ActivatedRoute, private router: Router) {
     this.subredditId = this.activateRoute.snapshot.params.id;
     this.postService.getPostsbySubreddit(this.subredditId).subscribe(post => {
-      this.posts = post;
+    this.posts = post;
     });
   }
 

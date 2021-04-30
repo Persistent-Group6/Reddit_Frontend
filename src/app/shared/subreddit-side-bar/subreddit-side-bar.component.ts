@@ -11,6 +11,11 @@ import{Router}from '@angular/router';
 export class SubredditSideBarComponent implements OnInit {
   subreddits: Array<SubredditModel> = [];
   displayViewAll: boolean;
+  
+  goToSubReddit(id: number): void {
+    this.router.navigateByUrl('/view-post-by-subreddit/'+id);
+  }
+
 
   constructor(private subredditService: SubredditService,private router: Router) {
     this.subredditService.getAllSubreddits().subscribe(data => {
@@ -21,10 +26,12 @@ export class SubredditSideBarComponent implements OnInit {
         this.subreddits = data;
       }
     });
+    
   }
 
-  ngOnInit(): void { }
-  goToSubReddit(id: number): void {
-    this.router.navigateByUrl('/view-post-by-subreddit/'+id);
-  }
+  ngOnInit(): void {
+    
+   }
+  
 }
+ 
